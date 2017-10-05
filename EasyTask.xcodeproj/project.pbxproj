@@ -14,6 +14,9 @@
 		0386027A1F86201200C05444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602781F86201200C05444 /* LaunchScreen.storyboard */; };
 		038602851F86201200C05444 /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602841F86201200C05444 /* EasyTaskTests.swift */; };
 		038602901F86201200C05444 /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386028F1F86201200C05444 /* EasyTaskUITests.swift */; };
+		8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */; };
+		9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */; };
+		D991AC0594399B4399E9EB28 /* Pods_EasyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F812042B9FAF205354E7CD50 /* Pods_EasyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0330C38F1F866885007428E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038602711F86201200C05444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 		0386028B1F86201200C05444 /* EasyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386028F1F86201200C05444 /* EasyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskUITests.swift; sourceTree = "<group>"; };
 		038602911F86201200C05444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.release.xcconfig"; sourceTree = "<group>"; };
+		2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D082FEB3EE736D32398BE9 /* Pods-EasyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaskUITests/Pods-EasyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		539A206F24BE046511171FEB /* Pods-EasyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaskTests/Pods-EasyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ED73D0FCF2C74D6C23E89D6 /* Pods-EasyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaskUITests/Pods-EasyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2EB3F6B945E11B9AF03534 /* Pods-EasyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		E5DEA3A1B0AF9B5D81B6F94D /* Pods-EasyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaskTests/Pods-EasyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		F812042B9FAF205354E7CD50 /* Pods_EasyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D991AC0594399B4399E9EB28 /* Pods_EasyTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				038602831F86201200C05444 /* EasyTaskTests */,
 				0386028E1F86201200C05444 /* EasyTaskUITests */,
 				0386026D1F86201200C05444 /* Products */,
+				48F898B37DAFF44829502FC6 /* Pods */,
+				6E8C8ED7C6CEF9740DCB2D3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,7 @@
 				038602761F86201200C05444 /* Assets.xcassets */,
 				038602781F86201200C05444 /* LaunchScreen.storyboard */,
 				0386027B1F86201200C05444 /* Info.plist */,
+				0330C38F1F866885007428E9 /* GoogleService-Info.plist */,
 			);
 			path = EasyTask;
 			sourceTree = "<group>";
@@ -125,6 +144,29 @@
 			path = EasyTaskUITests;
 			sourceTree = "<group>";
 		};
+		48F898B37DAFF44829502FC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD2EB3F6B945E11B9AF03534 /* Pods-EasyTask.debug.xcconfig */,
+				0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */,
+				539A206F24BE046511171FEB /* Pods-EasyTaskTests.debug.xcconfig */,
+				E5DEA3A1B0AF9B5D81B6F94D /* Pods-EasyTaskTests.release.xcconfig */,
+				51D082FEB3EE736D32398BE9 /* Pods-EasyTaskUITests.debug.xcconfig */,
+				5ED73D0FCF2C74D6C23E89D6 /* Pods-EasyTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E8C8ED7C6CEF9740DCB2D3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */,
+				F812042B9FAF205354E7CD50 /* Pods_EasyTaskTests.framework */,
+				2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038602941F86201200C05444 /* Build configuration list for PBXNativeTarget "EasyTask" */;
 			buildPhases = (
+				8B86B1EB8EEDE2B74502FF96 /* [CP] Check Pods Manifest.lock */,
 				038602681F86201200C05444 /* Sources */,
 				038602691F86201200C05444 /* Frameworks */,
 				0386026A1F86201200C05444 /* Resources */,
+				BF7CBBFD22511AE3E136A23D /* [CP] Embed Pods Frameworks */,
+				B32AC785EC3289BB19D74D0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038602971F86201200C05444 /* Build configuration list for PBXNativeTarget "EasyTaskTests" */;
 			buildPhases = (
+				4C4ED12556494D4B886E6224 /* [CP] Check Pods Manifest.lock */,
 				0386027C1F86201200C05444 /* Sources */,
 				0386027D1F86201200C05444 /* Frameworks */,
 				0386027E1F86201200C05444 /* Resources */,
+				D6520E9EED45B306F9ECFBBE /* [CP] Embed Pods Frameworks */,
+				8FBC317F2DE20DC8DB285F01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0386029A1F86201200C05444 /* Build configuration list for PBXNativeTarget "EasyTaskUITests" */;
 			buildPhases = (
+				69B2E5D8AE17DC5CBB52A165 /* [CP] Check Pods Manifest.lock */,
 				038602871F86201200C05444 /* Sources */,
 				038602881F86201200C05444 /* Frameworks */,
 				038602891F86201200C05444 /* Resources */,
+				5ED314FD49F34C178327E75F /* [CP] Embed Pods Frameworks */,
+				775ED0B3F34B7C66562BC087 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +304,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C4ED12556494D4B886E6224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED314FD49F34C178327E75F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTaskUITests/Pods-EasyTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B2E5D8AE17DC5CBB52A165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		775ED0B3F34B7C66562BC087 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTaskUITests/Pods-EasyTaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B86B1EB8EEDE2B74502FF96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FBC317F2DE20DC8DB285F01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTaskTests/Pods-EasyTaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32AC785EC3289BB19D74D0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7CBBFD22511AE3E136A23D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6520E9EED45B306F9ECFBBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTaskTests/Pods-EasyTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		038602681F86201200C05444 /* Sources */ = {
@@ -424,12 +631,13 @@
 		};
 		038602951F86201200C05444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2EB3F6B945E11B9AF03534 /* Pods-EasyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EasyTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IOS.EasyTask;
+				PRODUCT_BUNDLE_IDENTIFIER = EasyTask.EasyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,12 +646,13 @@
 		};
 		038602961F86201200C05444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EasyTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IOS.EasyTask;
+				PRODUCT_BUNDLE_IDENTIFIER = EasyTask.EasyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +661,7 @@
 		};
 		038602981F86201200C05444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539A206F24BE046511171FEB /* Pods-EasyTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +678,7 @@
 		};
 		038602991F86201200C05444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DEA3A1B0AF9B5D81B6F94D /* Pods-EasyTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +695,7 @@
 		};
 		0386029B1F86201200C05444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D082FEB3EE736D32398BE9 /* Pods-EasyTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +711,7 @@
 		};
 		0386029C1F86201200C05444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED73D0FCF2C74D6C23E89D6 /* Pods-EasyTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
