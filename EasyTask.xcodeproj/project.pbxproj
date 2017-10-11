@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030C207B1F8DEF8C0003D0A5 /* easytask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = easytask.png; path = ../../../Desktop/easytask.png; sourceTree = "<group>"; };
 		0330C38F1F866885007428E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				038602781F86201200C05444 /* LaunchScreen.storyboard */,
 				0386027B1F86201200C05444 /* Info.plist */,
 				0330C38F1F866885007428E9 /* GoogleService-Info.plist */,
+				030C207B1F8DEF8C0003D0A5 /* easytask.png */,
 			);
 			path = EasyTask;
 			sourceTree = "<group>";
