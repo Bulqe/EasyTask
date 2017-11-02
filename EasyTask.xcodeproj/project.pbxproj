@@ -14,6 +14,11 @@
 		0386027A1F86201200C05444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602781F86201200C05444 /* LaunchScreen.storyboard */; };
 		038602851F86201200C05444 /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602841F86201200C05444 /* EasyTaskTests.swift */; };
 		038602901F86201200C05444 /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386028F1F86201200C05444 /* EasyTaskUITests.swift */; };
+		03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */; };
+		03F256291FAB093F004A8F6D /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F256281FAB093F004A8F6D /* CreateUser.swift */; };
+		03F2562B1FAB0984004A8F6D /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2562A1FAB0984004A8F6D /* MainMenu.swift */; };
+		03F2562D1FAB099C004A8F6D /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2562C1FAB099C004A8F6D /* CreateTask.swift */; };
+		03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */; };
 		8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */; };
 		9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */; };
 		D991AC0594399B4399E9EB28 /* Pods_EasyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F812042B9FAF205354E7CD50 /* Pods_EasyTaskTests.framework */; };
@@ -37,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		030C207B1F8DEF8C0003D0A5 /* easytask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = easytask.png; path = ../../../Desktop/easytask.png; sourceTree = "<group>"; };
-		0330C38F1F866885007428E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038602711F86201200C05444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +55,11 @@
 		0386028B1F86201200C05444 /* EasyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386028F1F86201200C05444 /* EasyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskUITests.swift; sourceTree = "<group>"; };
 		038602911F86201200C05444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EasyTaskLogo.png; sourceTree = "<group>"; };
+		03F256281FAB093F004A8F6D /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
+		03F2562A1FAB0984004A8F6D /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		03F2562C1FAB099C004A8F6D /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
+		03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.release.xcconfig"; sourceTree = "<group>"; };
 		2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D082FEB3EE736D32398BE9 /* Pods-EasyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaskUITests/Pods-EasyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,12 +126,15 @@
 			children = (
 				0386026F1F86201200C05444 /* AppDelegate.swift */,
 				038602711F86201200C05444 /* ViewController.swift */,
+				03F256281FAB093F004A8F6D /* CreateUser.swift */,
+				03F2562A1FAB0984004A8F6D /* MainMenu.swift */,
+				03F2562C1FAB099C004A8F6D /* CreateTask.swift */,
 				038602731F86201200C05444 /* Main.storyboard */,
 				038602761F86201200C05444 /* Assets.xcassets */,
 				038602781F86201200C05444 /* LaunchScreen.storyboard */,
+				03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */,
+				03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */,
 				0386027B1F86201200C05444 /* Info.plist */,
-				0330C38F1F866885007428E9 /* GoogleService-Info.plist */,
-				030C207B1F8DEF8C0003D0A5 /* easytask.png */,
 			);
 			path = EasyTask;
 			sourceTree = "<group>";
@@ -286,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0386027A1F86201200C05444 /* LaunchScreen.storyboard in Resources */,
+				03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */,
+				03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */,
 				038602771F86201200C05444 /* Assets.xcassets in Resources */,
 				038602751F86201200C05444 /* Main.storyboard in Resources */,
 			);
@@ -469,7 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				038602721F86201200C05444 /* ViewController.swift in Sources */,
+				03F256291FAB093F004A8F6D /* CreateUser.swift in Sources */,
 				038602701F86201200C05444 /* AppDelegate.swift in Sources */,
+				03F2562D1FAB099C004A8F6D /* CreateTask.swift in Sources */,
+				03F2562B1FAB0984004A8F6D /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
