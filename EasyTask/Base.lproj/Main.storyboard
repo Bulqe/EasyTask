@@ -35,14 +35,14 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pM-T0-Lbi">
                                 <rect key="frame" x="160.5" y="475" width="53" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="LOG IND"/>
                                 <connections>
-                                    <segue destination="hNf-0M-DPe" kind="show" id="sri-Fr-O7v"/>
+                                    <action selector="logInButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CzO-tx-ZSj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rI4-Rn-5e9">
@@ -50,7 +50,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="OPRET BRUGER"/>
                                 <connections>
-                                    <segue destination="NSi-x8-Dlq" kind="show" id="eeB-H0-xXZ"/>
+                                    <segue destination="NSi-x8-Dlq" kind="show" id="JcK-as-3LZ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EasyTaskLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="dT0-2Y-1H1">
@@ -76,15 +76,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="5JM-V3-asC" id="PpY-8w-Ee1"/>
+                        <outlet property="logInButton" destination="2pM-T0-Lbi" id="4gR-l7-Sa5"/>
+                        <outlet property="passwordField" destination="8pJ-qm-SOp" id="NMI-P4-4I2"/>
+                        <segue destination="hNf-0M-DPe" kind="show" identifier="segue" id="MQ9-KE-aBz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-287.19999999999999" y="87.706146926536732"/>
         </scene>
-        <!--View Controller-->
+        <!--Create User View Controller-->
         <scene sceneID="DTg-Nn-hWg">
             <objects>
-                <viewController id="NSi-x8-Dlq" sceneMemberID="viewController">
+                <viewController id="NSi-x8-Dlq" customClass="CreateUserViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tt6-2C-9ca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +111,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCL-Pk-0ud">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCL-Pk-0ud">
                                 <rect key="frame" x="16.5" y="235.5" width="342" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="342" id="Z7t-Ss-FeW"/>
@@ -113,9 +119,9 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-fb-1z2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-fb-1z2">
                                 <rect key="frame" x="16" y="285.5" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NFA-Lv-7R3"/>
@@ -123,7 +129,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZY-wd-RBS">
                                 <rect key="frame" x="16" y="335.5" width="343" height="20.5"/>
@@ -163,14 +169,14 @@
                                 <rect key="frame" x="139" y="478" width="98" height="30"/>
                                 <state key="normal" title="CREATE USER"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="535-fr-8nk"/>
+                                    <action selector="CreateUserButtonClick:" destination="NSi-x8-Dlq" eventType="touchUpInside" id="Mqm-2i-b7o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ui9-d1-B05">
                                 <rect key="frame" x="91" y="528" width="194" height="30"/>
                                 <state key="normal" title="RETURN TO LOGIN SCREEN"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="G9T-q9-sOW"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iLl-Lz-YMG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udL-US-BCu">
@@ -212,15 +218,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lue-kU-sH4"/>
                     </view>
+                    <connections>
+                        <outlet property="ConfirmPasswordField" destination="WmQ-fb-1z2" id="8SQ-i4-HIn"/>
+                        <outlet property="CreateUserButton" destination="PCU-IG-U4p" id="5ko-eW-kEr"/>
+                        <outlet property="CreatingTasksSwitch" destination="znM-A0-yzY" id="Wtw-Tj-bqh"/>
+                        <outlet property="DoingTasksSwitch" destination="HYp-An-GIx" id="WNZ-aA-7dC"/>
+                        <outlet property="emailField" destination="P4d-5t-pxF" id="iW6-G1-jDO"/>
+                        <outlet property="passwordField" destination="fCL-Pk-0ud" id="uPN-Ih-Zbp"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueLogIn" id="17b-QF-wo9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iu7-d1-4I4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-287.19999999999999" y="861.3193403298352"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="OBk-bX-eFb">
             <objects>
-                <viewController id="hNf-0M-DPe" sceneMemberID="viewController">
+                <viewController id="hNf-0M-DPe" customClass="MainViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZWe-Ty-KYS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,27 +243,57 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-HN-G70">
                                 <rect key="frame" x="147" y="118" width="81" height="30"/>
                                 <state key="normal" title="Create Task"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPh-ac-T2v">
+                                <rect key="frame" x="159.5" y="170" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <segue destination="xqt-tH-rHm" kind="show" id="rz3-U0-qlj"/>
+                                    <action selector="logOutClick:" destination="hNf-0M-DPe" eventType="touchUpInside" id="VHd-O4-UzB"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A2o-58-BsV">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="axx-tf-CPH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axx-tf-CPH" id="IfT-np-Tv0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hNf-0M-DPe" id="AJi-xh-uIo"/>
+                                    <outlet property="delegate" destination="hNf-0M-DPe" id="7JA-W5-vmG"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hoq-HN-G70" firstAttribute="centerX" secondItem="D3e-y0-Ugt" secondAttribute="centerX" id="MdE-ht-rP9"/>
+                            <constraint firstItem="nPh-ac-T2v" firstAttribute="top" secondItem="hoq-HN-G70" secondAttribute="bottom" constant="22" id="P52-0S-GHF"/>
+                            <constraint firstItem="nPh-ac-T2v" firstAttribute="centerX" secondItem="D3e-y0-Ugt" secondAttribute="centerX" id="n0n-ap-IVR"/>
                             <constraint firstItem="hoq-HN-G70" firstAttribute="top" secondItem="D3e-y0-Ugt" secondAttribute="top" constant="98" id="vt2-LB-ZM8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D3e-y0-Ugt"/>
                     </view>
+                    <connections>
+                        <outlet property="logOut" destination="nPh-ac-T2v" id="oD6-8d-rju"/>
+                        <outlet property="tableView" destination="A2o-58-BsV" id="tzX-mm-cyt"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueLogOut" id="KiM-bV-KE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gu-YJ-N9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="496.80000000000001" y="87.706146926536732"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Task View Controller-->
         <scene sceneID="RxS-qP-bLC">
             <objects>
-                <viewController id="xqt-tH-rHm" sceneMemberID="viewController">
+                <viewController id="xqt-tH-rHm" customClass="CreateTaskViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="71n-cN-ufE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,6 +344,6 @@
         <image name="EasyTaskLogo.png" width="250" height="258"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="535-fr-8nk"/>
+        <segue reference="KiM-bV-KE6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */; };
+		034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */; };
+		034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83C11FB45F1100567F43 /* MainViewController.swift */; };
 		038602701F86201200C05444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386026F1F86201200C05444 /* AppDelegate.swift */; };
 		038602721F86201200C05444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602711F86201200C05444 /* ViewController.swift */; };
 		038602751F86201200C05444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602731F86201200C05444 /* Main.storyboard */; };
@@ -15,9 +18,6 @@
 		038602851F86201200C05444 /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602841F86201200C05444 /* EasyTaskTests.swift */; };
 		038602901F86201200C05444 /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386028F1F86201200C05444 /* EasyTaskUITests.swift */; };
 		03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */; };
-		03F256291FAB093F004A8F6D /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F256281FAB093F004A8F6D /* CreateUser.swift */; };
-		03F2562B1FAB0984004A8F6D /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2562A1FAB0984004A8F6D /* MainMenu.swift */; };
-		03F2562D1FAB099C004A8F6D /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2562C1FAB099C004A8F6D /* CreateTask.swift */; };
 		03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */; };
 		8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */; };
 		9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */; };
@@ -42,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		034A83C11FB45F1100567F43 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038602711F86201200C05444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +59,6 @@
 		0386028F1F86201200C05444 /* EasyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskUITests.swift; sourceTree = "<group>"; };
 		038602911F86201200C05444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EasyTaskLogo.png; sourceTree = "<group>"; };
-		03F256281FAB093F004A8F6D /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
-		03F2562A1FAB0984004A8F6D /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		03F2562C1FAB099C004A8F6D /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
 		03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.release.xcconfig"; sourceTree = "<group>"; };
 		2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,9 +126,9 @@
 			children = (
 				0386026F1F86201200C05444 /* AppDelegate.swift */,
 				038602711F86201200C05444 /* ViewController.swift */,
-				03F256281FAB093F004A8F6D /* CreateUser.swift */,
-				03F2562A1FAB0984004A8F6D /* MainMenu.swift */,
-				03F2562C1FAB099C004A8F6D /* CreateTask.swift */,
+				034A83C11FB45F1100567F43 /* MainViewController.swift */,
+				034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */,
+				034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */,
 				038602731F86201200C05444 /* Main.storyboard */,
 				038602761F86201200C05444 /* Assets.xcassets */,
 				038602781F86201200C05444 /* LaunchScreen.storyboard */,
@@ -482,10 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				038602721F86201200C05444 /* ViewController.swift in Sources */,
-				03F256291FAB093F004A8F6D /* CreateUser.swift in Sources */,
 				038602701F86201200C05444 /* AppDelegate.swift in Sources */,
-				03F2562D1FAB099C004A8F6D /* CreateTask.swift in Sources */,
-				03F2562B1FAB0984004A8F6D /* MainMenu.swift in Sources */,
+				034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */,
+				034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */,
+				034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
