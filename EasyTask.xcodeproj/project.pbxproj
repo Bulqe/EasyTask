@@ -10,11 +10,11 @@
 		034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */; };
 		034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */; };
 		034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83C11FB45F1100567F43 /* MainViewController.swift */; };
+		034F46741FCC2EC300BD2644 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */; };
 		038602701F86201200C05444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386026F1F86201200C05444 /* AppDelegate.swift */; };
 		038602721F86201200C05444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602711F86201200C05444 /* ViewController.swift */; };
 		038602751F86201200C05444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602731F86201200C05444 /* Main.storyboard */; };
 		038602771F86201200C05444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038602761F86201200C05444 /* Assets.xcassets */; };
-		0386027A1F86201200C05444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602781F86201200C05444 /* LaunchScreen.storyboard */; };
 		038602851F86201200C05444 /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602841F86201200C05444 /* EasyTaskTests.swift */; };
 		038602901F86201200C05444 /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386028F1F86201200C05444 /* EasyTaskUITests.swift */; };
 		03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */; };
@@ -45,12 +45,12 @@
 		034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		034A83C11FB45F1100567F43 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038602711F86201200C05444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		038602741F86201200C05444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		038602761F86201200C05444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		038602791F86201200C05444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0386027B1F86201200C05444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		038602801F86201200C05444 /* EasyTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		038602841F86201200C05444 /* EasyTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskTests.swift; sourceTree = "<group>"; };
@@ -128,10 +128,10 @@
 				038602711F86201200C05444 /* ViewController.swift */,
 				034A83C11FB45F1100567F43 /* MainViewController.swift */,
 				034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */,
+				034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */,
 				034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */,
 				038602731F86201200C05444 /* Main.storyboard */,
 				038602761F86201200C05444 /* Assets.xcassets */,
-				038602781F86201200C05444 /* LaunchScreen.storyboard */,
 				03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */,
 				03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */,
 				0386027B1F86201200C05444 /* Info.plist */,
@@ -296,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0386027A1F86201200C05444 /* LaunchScreen.storyboard in Resources */,
 				03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */,
 				03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */,
 				038602771F86201200C05444 /* Assets.xcassets in Resources */,
@@ -482,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038602721F86201200C05444 /* ViewController.swift in Sources */,
+				034F46741FCC2EC300BD2644 /* EditTaskViewController.swift in Sources */,
 				038602701F86201200C05444 /* AppDelegate.swift in Sources */,
 				034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */,
 				034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */,
@@ -527,14 +527,6 @@
 				038602741F86201200C05444 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		038602781F86201200C05444 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				038602791F86201200C05444 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

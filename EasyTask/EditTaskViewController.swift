@@ -1,23 +1,24 @@
 //
-//  CreateTaskViewController.swift
+//  EditTaskViewController.swift
 //  EasyTask
 //
-//  Created by Burim on 09/11/2017.
+//  Created by Burim on 27/11/2017.
 //  Copyright © 2017 EasyTask. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class CreateTaskViewController: UIViewController {
-
-    var ref:DatabaseReference?
-
+class EditTaskViewController: UIViewController {
+    
+        var ref:DatabaseReference?
+    
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     @IBOutlet weak var paymentField: UITextField!
-    @IBOutlet weak var createTaskButton: UIButton!
-    @IBAction func createTaskButtonClick(_ sender: UIButton) {
+    @IBOutlet weak var editTaskButton: UIButton!
+    
+    @IBAction func editTaskButtonClick(_ sender: UIButton) {
         
         ref = Database.database().reference()
         if titleField.text != "" && descriptionField.text != "" && paymentField.text != "" {
@@ -40,10 +41,15 @@ class CreateTaskViewController: UIViewController {
         
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
 
+        //let tasksId = self.ref?.child("tasks").childByAutoId().key
+        //titleField.insertText(ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").)
+        
+        
         // Do any additional setup after loading the view.
     }
 

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-V3-asC">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hot@hot.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-V3-asC">
                                 <rect key="frame" x="87" y="334" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="3KJ-yE-S4V"/>
@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-qm-SOp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="hothot" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-qm-SOp">
                                 <rect key="frame" x="87.5" y="406" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="VJ4-ii-Cv0"/>
@@ -243,6 +243,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-HN-G70">
                                 <rect key="frame" x="147" y="118" width="81" height="30"/>
                                 <state key="normal" title="Create Task"/>
+                                <connections>
+                                    <segue destination="axH-Tb-Sk9" kind="show" id="dr1-mC-qF3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPh-ac-T2v">
                                 <rect key="frame" x="159.5" y="170" width="55" height="30"/>
@@ -270,11 +273,20 @@
                                     <outlet property="delegate" destination="hNf-0M-DPe" id="7JA-W5-vmG"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0I-kK-aVC">
+                                <rect key="frame" x="164.5" y="208" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="2Eu-s2-fbu" kind="show" id="LDP-YC-VqG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hoq-HN-G70" firstAttribute="centerX" secondItem="D3e-y0-Ugt" secondAttribute="centerX" id="MdE-ht-rP9"/>
+                            <constraint firstItem="g0I-kK-aVC" firstAttribute="centerX" secondItem="D3e-y0-Ugt" secondAttribute="centerX" id="Our-3v-uby"/>
                             <constraint firstItem="nPh-ac-T2v" firstAttribute="top" secondItem="hoq-HN-G70" secondAttribute="bottom" constant="22" id="P52-0S-GHF"/>
+                            <constraint firstItem="g0I-kK-aVC" firstAttribute="top" secondItem="nPh-ac-T2v" secondAttribute="bottom" constant="8" id="YCX-SP-gOg"/>
                             <constraint firstItem="nPh-ac-T2v" firstAttribute="centerX" secondItem="D3e-y0-Ugt" secondAttribute="centerX" id="n0n-ap-IVR"/>
                             <constraint firstItem="hoq-HN-G70" firstAttribute="top" secondItem="D3e-y0-Ugt" secondAttribute="top" constant="98" id="vt2-LB-ZM8"/>
                         </constraints>
@@ -291,59 +303,190 @@
             <point key="canvasLocation" x="496.80000000000001" y="87.706146926536732"/>
         </scene>
         <!--Create Task View Controller-->
-        <scene sceneID="RxS-qP-bLC">
+        <scene sceneID="pXt-3R-v1V">
             <objects>
-                <viewController id="xqt-tH-rHm" customClass="CreateTaskViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="71n-cN-ufE">
+                <viewController id="axH-Tb-Sk9" customClass="CreateTaskViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B3c-cB-Jtl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp0-5Z-zsg">
-                                <rect key="frame" x="0.0" y="91" width="375" height="44.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymV-IA-bgL">
+                                <rect key="frame" x="95" y="91" width="185.5" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-oE-rxo">
-                                <rect key="frame" x="17" y="378" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Payment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bi5-jM-EhN">
+                                <rect key="frame" x="16" y="357" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="GAH-pR-YGo"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBQ-hN-bIc">
-                                <rect key="frame" x="17" y="478" width="342" height="30"/>
-                                <state key="normal" title="CREATE USER"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K0-tu-Krv">
+                                <rect key="frame" x="73" y="497" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="oa2-XY-7zx"/>
+                                </constraints>
+                                <state key="normal" title="RETURN TO MAIN SCREEN"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFI-oy-KkC">
-                                <rect key="frame" x="73" y="528" width="230" height="30"/>
-                                <state key="normal" title="RETURN TO LOGIN SCREEN"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-qg-bqh">
-                                <rect key="frame" x="17" y="304" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-ck-4eJ">
+                                <rect key="frame" x="17" y="297" width="342" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="4aK-ei-qo1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-nW-bEG">
+                                <rect key="frame" x="17" y="228" width="342" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="kTm-Xh-xOe"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRW-R6-aOx">
+                                <rect key="frame" x="16" y="447" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8EB-Js-Jkb"/>
+                                    <constraint firstAttribute="height" constant="30" id="b5D-WQ-d2i"/>
+                                </constraints>
+                                <state key="normal" title="CREATE TASK"/>
+                                <connections>
+                                    <action selector="createTaskButtonClick:" destination="axH-Tb-Sk9" eventType="touchUpInside" id="J6O-pd-hUW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TFI-oy-KkC" firstAttribute="top" secondItem="iBQ-hN-bIc" secondAttribute="bottom" constant="20" id="OGQ-5M-yKq"/>
+                            <constraint firstItem="ZRW-R6-aOx" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="3Dw-by-4zI"/>
+                            <constraint firstItem="2K0-tu-Krv" firstAttribute="top" secondItem="ZRW-R6-aOx" secondAttribute="bottom" constant="20" id="3zs-a9-JMr"/>
+                            <constraint firstItem="Bi5-jM-EhN" firstAttribute="top" secondItem="xgH-ck-4eJ" secondAttribute="bottom" constant="30" id="4M5-u0-2CE"/>
+                            <constraint firstItem="cdy-nW-bEG" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="4Sb-9B-3SB"/>
+                            <constraint firstItem="Bi5-jM-EhN" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="FdA-Si-8Ke"/>
+                            <constraint firstItem="cdy-nW-bEG" firstAttribute="top" secondItem="ymV-IA-bgL" secondAttribute="bottom" constant="92.5" id="M5C-AB-VpX"/>
+                            <constraint firstItem="2K0-tu-Krv" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="XBi-b4-D6r"/>
+                            <constraint firstItem="ymV-IA-bgL" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="eYb-Rq-jU6"/>
+                            <constraint firstItem="xgH-ck-4eJ" firstAttribute="centerX" secondItem="JQK-OI-Q5d" secondAttribute="centerX" id="l1y-PG-uZ6"/>
+                            <constraint firstItem="ZRW-R6-aOx" firstAttribute="top" secondItem="Bi5-jM-EhN" secondAttribute="bottom" constant="60" id="n3r-vR-sGE"/>
+                            <constraint firstItem="xgH-ck-4eJ" firstAttribute="top" secondItem="cdy-nW-bEG" secondAttribute="bottom" constant="39" id="zPv-RH-AmF"/>
+                            <constraint firstItem="ymV-IA-bgL" firstAttribute="top" secondItem="JQK-OI-Q5d" secondAttribute="top" constant="71" id="zS8-qD-nYI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HaE-7c-DYp"/>
+                        <viewLayoutGuide key="safeArea" id="JQK-OI-Q5d"/>
                     </view>
+                    <connections>
+                        <outlet property="createTaskButton" destination="ZRW-R6-aOx" id="qIZ-nN-j4H"/>
+                        <outlet property="descriptionField" destination="xgH-ck-4eJ" id="aJG-sU-TwE"/>
+                        <outlet property="paymentField" destination="Bi5-jM-EhN" id="g6m-pn-BG0"/>
+                        <outlet property="titleField" destination="cdy-nW-bEG" id="PfU-do-0xG"/>
+                        <segue destination="hNf-0M-DPe" kind="show" identifier="segueCreateTask" id="HxK-Lx-ZXg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pc-G4-PRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIz-dc-tAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296.8" y="87.706146926536732"/>
+            <point key="canvasLocation" x="1301.5999999999999" y="87.706146926536732"/>
+        </scene>
+        <!--Edit Task View Controller-->
+        <scene sceneID="CS7-bh-dpV">
+            <objects>
+                <viewController id="2Eu-s2-fbu" customClass="EditTaskViewController" customModule="EasyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UF6-jO-nNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-Oo-rqL">
+                                <rect key="frame" x="16" y="228" width="342" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="dFk-v4-DSa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e47-NZ-Nw9">
+                                <rect key="frame" x="72" y="497" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="9yb-Kw-SkK"/>
+                                </constraints>
+                                <state key="normal" title="RETURN TO MY TASKS"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-iQ-eCp">
+                                <rect key="frame" x="16" y="297" width="342" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="fEw-65-IJu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Payment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yb-hI-YvR">
+                                <rect key="frame" x="16" y="357" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="C9h-YB-Dao"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weu-NB-e2U">
+                                <rect key="frame" x="116.5" y="91" width="141" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix4-C6-0XZ">
+                                <rect key="frame" x="16" y="447" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="B2t-se-RD8"/>
+                                    <constraint firstAttribute="height" constant="30" id="aWE-tn-Oei"/>
+                                </constraints>
+                                <state key="normal" title="EDIT TASK"/>
+                                <connections>
+                                    <action selector="createTaskButtonClick:" destination="axH-Tb-Sk9" eventType="touchUpInside" id="2Yh-he-69s"/>
+                                    <action selector="editTaskButtonClick:" destination="2Eu-s2-fbu" eventType="touchUpInside" id="hIe-dZ-C0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cG3-Oo-rqL" firstAttribute="top" secondItem="weu-NB-e2U" secondAttribute="bottom" constant="92.5" id="6M5-dH-Yhu"/>
+                            <constraint firstItem="weu-NB-e2U" firstAttribute="top" secondItem="wg5-cK-xtH" secondAttribute="top" constant="71" id="DPv-1S-hTv"/>
+                            <constraint firstItem="e47-NZ-Nw9" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="J2q-OK-3g8"/>
+                            <constraint firstItem="5Ve-iQ-eCp" firstAttribute="top" secondItem="cG3-Oo-rqL" secondAttribute="bottom" constant="39" id="PX6-Di-4pz"/>
+                            <constraint firstItem="Ix4-C6-0XZ" firstAttribute="top" secondItem="5yb-hI-YvR" secondAttribute="bottom" constant="60" id="RzY-MT-Ndc"/>
+                            <constraint firstItem="5yb-hI-YvR" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="YZZ-Qz-VVN"/>
+                            <constraint firstItem="5yb-hI-YvR" firstAttribute="top" secondItem="5Ve-iQ-eCp" secondAttribute="bottom" constant="30" id="bpF-E5-r9w"/>
+                            <constraint firstItem="Ix4-C6-0XZ" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="jhK-ED-2Qn"/>
+                            <constraint firstItem="cG3-Oo-rqL" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="oLU-IU-Jao"/>
+                            <constraint firstItem="e47-NZ-Nw9" firstAttribute="top" secondItem="Ix4-C6-0XZ" secondAttribute="bottom" constant="20" id="odK-gR-4ve"/>
+                            <constraint firstItem="weu-NB-e2U" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="wK8-Zl-Y5s"/>
+                            <constraint firstItem="5Ve-iQ-eCp" firstAttribute="centerX" secondItem="wg5-cK-xtH" secondAttribute="centerX" id="zfr-Si-GX0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wg5-cK-xtH"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="5Ve-iQ-eCp" id="u1a-4u-QbC"/>
+                        <outlet property="editTaskButton" destination="Ix4-C6-0XZ" id="dQ1-Hc-hIN"/>
+                        <outlet property="paymentField" destination="5yb-hI-YvR" id="n1j-5w-Kir"/>
+                        <outlet property="titleField" destination="cG3-Oo-rqL" id="Ub8-sj-y8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ub6-hC-5Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2129" y="88"/>
         </scene>
     </scenes>
     <resources>
         <image name="EasyTaskLogo.png" width="250" height="258"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dr1-mC-qF3"/>
+        <segue reference="HxK-Lx-ZXg"/>
         <segue reference="KiM-bV-KE6"/>
     </inferredMetricsTieBreakers>
 </document>
