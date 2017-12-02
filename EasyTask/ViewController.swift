@@ -38,8 +38,6 @@ class ViewController: UIViewController {
             })
             
         }
-        
-        print("click")
     }
     
     

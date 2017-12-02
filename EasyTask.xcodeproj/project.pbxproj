@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0303006E1FD2BBEC00F2027C /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303006D1FD2BBEC00F2027C /* Tasks.swift */; };
+		030300741FD2D78700F2027C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030300731FD2D78700F2027C /* MainTableViewController.swift */; };
 		034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */; };
 		034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */; };
 		034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83C11FB45F1100567F43 /* MainViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0303006D1FD2BBEC00F2027C /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		030300731FD2D78700F2027C /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		034A83C11FB45F1100567F43 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -99,9 +103,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0303006C1FD2BBC600F2027C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0303006D1FD2BBEC00F2027C /* Tasks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		038602631F86201200C05444 = {
 			isa = PBXGroup;
 			children = (
+				0303006C1FD2BBC600F2027C /* Model */,
 				0386026E1F86201200C05444 /* EasyTask */,
 				038602831F86201200C05444 /* EasyTaskTests */,
 				0386028E1F86201200C05444 /* EasyTaskUITests */,
@@ -127,6 +140,7 @@
 				0386026F1F86201200C05444 /* AppDelegate.swift */,
 				038602711F86201200C05444 /* ViewController.swift */,
 				034A83C11FB45F1100567F43 /* MainViewController.swift */,
+				030300731FD2D78700F2027C /* MainTableViewController.swift */,
 				034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */,
 				034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */,
 				034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */,
@@ -482,7 +496,9 @@
 			files = (
 				038602721F86201200C05444 /* ViewController.swift in Sources */,
 				034F46741FCC2EC300BD2644 /* EditTaskViewController.swift in Sources */,
+				0303006E1FD2BBEC00F2027C /* Tasks.swift in Sources */,
 				038602701F86201200C05444 /* AppDelegate.swift in Sources */,
+				030300741FD2D78700F2027C /* MainTableViewController.swift in Sources */,
 				034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */,
 				034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */,
 				034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */,

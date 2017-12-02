@@ -29,7 +29,7 @@ class EditTaskViewController: UIViewController {
             ref?.child("tasks").child(tasksId!).child("description").setValue(descriptionField.text)
             ref?.child("tasks").child(tasksId!).child("payment").setValue(paymentField.text)
             
-            self.performSegue(withIdentifier: "segueCreateTask", sender: self)
+            self.performSegue(withIdentifier: "segueEditTask", sender: self)
             
         } else {
             
@@ -47,7 +47,15 @@ class EditTaskViewController: UIViewController {
         ref = Database.database().reference()
 
         //let tasksId = self.ref?.child("tasks").childByAutoId().key
-        //titleField.insertText(ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").)
+        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("title").observe(.value, with:{ snapshot in
+            self.titleField.text = snapshot.value as? String
+        })
+        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("description").observe(.value, with:{ snapshot in
+            self.descriptionField.text = snapshot.value as? String
+        })
+        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("payment").observe(.value, with:{ snapshot in
+            self.paymentField.text = snapshot.value as? String
+        })
         
         
         // Do any additional setup after loading the view.
