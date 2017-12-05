@@ -32,7 +32,7 @@ class EditTaskViewController: UIViewController {
             
         } else {
             
-            let alertController = UIAlertController(title: "Ups!", message: "Make sure to fill all textfields", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Ups!", message: "Husk at udfylde alle felter", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             
@@ -42,6 +42,7 @@ class EditTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         
         ref = Database.database().reference()
 

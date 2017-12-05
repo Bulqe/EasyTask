@@ -28,7 +28,7 @@ class CreateUserViewController: UIViewController {
         var ref:DatabaseReference?
         
         
-        if emailField.text != "" && passwordField.text != "" && passwordField.text == ConfirmPasswordField.text && navnField.text != "" && adresseField.text != "" && byField.text != "" && postNrField.text != "" && mobilNummerField.text != ""
+        if emailField.text != "" && passwordField.text != "" && passwordField.text == ConfirmPasswordField.text && navnField.text != "" && adresseField.text != "" && byField.text != "" && postNrField.text != "" && mobilNummerField.text != "" && DoingTasksSwitch.isOn != CreatingTasksSwitch.isOn
         {
             
             Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user, error) in
@@ -38,7 +38,7 @@ class CreateUserViewController: UIViewController {
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("name").setValue(self.navnField.text)
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").setValue(self.adresseField.text)
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").setValue(self.byField.text)
-                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode").setValue(self.postNrField.text)
+                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").setValue(self.postNrField.text)
                     if (self.DoingTasksSwitch.isOn == true){
                         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("isTaskCreator").setValue(false)
                     }
@@ -63,6 +63,12 @@ class CreateUserViewController: UIViewController {
                 }
             })
             
+        } else {
+            
+            let alertController = UIAlertController(title: "Ups!", message: "Husk at udfylde alle felter og du skal vælge hvad du vil", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            
         }
         
     }
@@ -71,7 +77,8 @@ class CreateUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DoingTasksSwitch.setOn(false, animated: false)
+        self.hideKeyboardWhenTappedAround() 
+        DoingTasksSwitch.setOn(true, animated: true)
         CreatingTasksSwitch.setOn(false, animated: false)
         // Do any additional setup after loading the view.
     }
