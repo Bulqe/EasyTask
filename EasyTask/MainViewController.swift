@@ -18,12 +18,20 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var burgerMenu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self as? UITableViewDataSource
         loadTasks()
-        // Do any additional setup after loading the view.
+        tasksList.removeAll()
+        
+        if self.revealViewController() != nil {
+            burgerMenu.target = self.revealViewController()
+            burgerMenu.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        //self.revealViewController().rearViewRevealWidth = 62
     }
     
     func loadTasks() {

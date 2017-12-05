@@ -19,7 +19,13 @@
 		038602771F86201200C05444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038602761F86201200C05444 /* Assets.xcassets */; };
 		038602851F86201200C05444 /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602841F86201200C05444 /* EasyTaskTests.swift */; };
 		038602901F86201200C05444 /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386028F1F86201200C05444 /* EasyTaskUITests.swift */; };
+		03AAE2871FD55A1E005194EF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AAE2861FD55A1E005194EF /* menu.png */; };
+		03AAE2951FD56BA4005194EF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AAE2941FD56BA4005194EF /* SWRevealViewController.m */; };
+		03AAE29A1FD56E30005194EF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAE2991FD56E30005194EF /* SideMenuViewController.swift */; };
 		03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */; };
+		03C34A9B1FD581520076B362 /* MinProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9A1FD581520076B362 /* MinProfilViewController.swift */; };
+		03C34A9D1FD581750076B362 /* MineTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9C1FD581750076B362 /* MineTasksViewController.swift */; };
+		03C34A9F1FD581CD0076B362 /* OmOsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */; };
 		03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */; };
 		8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */; };
 		9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */; };
@@ -62,7 +68,15 @@
 		0386028B1F86201200C05444 /* EasyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386028F1F86201200C05444 /* EasyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskUITests.swift; sourceTree = "<group>"; };
 		038602911F86201200C05444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03AAE2861FD55A1E005194EF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		03AAE2931FD56BA4005194EF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		03AAE2941FD56BA4005194EF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		03AAE2961FD56BB4005194EF /* EasyTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		03AAE2991FD56E30005194EF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EasyTaskLogo.png; sourceTree = "<group>"; };
+		03C34A9A1FD581520076B362 /* MinProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinProfilViewController.swift; sourceTree = "<group>"; };
+		03C34A9C1FD581750076B362 /* MineTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTasksViewController.swift; sourceTree = "<group>"; };
+		03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOsViewController.swift; sourceTree = "<group>"; };
 		03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.release.xcconfig"; sourceTree = "<group>"; };
 		2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +151,8 @@
 		0386026E1F86201200C05444 /* EasyTask */ = {
 			isa = PBXGroup;
 			children = (
+				03AAE2921FD56B90005194EF /* SWRevealViewController */,
+				03AAE28D1FD569D9005194EF /* Image */,
 				0386026F1F86201200C05444 /* AppDelegate.swift */,
 				038602711F86201200C05444 /* ViewController.swift */,
 				034A83C11FB45F1100567F43 /* MainViewController.swift */,
@@ -144,9 +160,13 @@
 				034A83BD1FB44C8400567F43 /* CreateUserViewController.swift */,
 				034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */,
 				034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */,
+				03AAE2991FD56E30005194EF /* SideMenuViewController.swift */,
+				03C34A9A1FD581520076B362 /* MinProfilViewController.swift */,
+				03C34A9C1FD581750076B362 /* MineTasksViewController.swift */,
+				03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */,
 				038602731F86201200C05444 /* Main.storyboard */,
 				038602761F86201200C05444 /* Assets.xcassets */,
-				03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */,
+				03AAE2961FD56BB4005194EF /* EasyTask-Bridging-Header.h */,
 				03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */,
 				0386027B1F86201200C05444 /* Info.plist */,
 			);
@@ -169,6 +189,24 @@
 				038602911F86201200C05444 /* Info.plist */,
 			);
 			path = EasyTaskUITests;
+			sourceTree = "<group>";
+		};
+		03AAE28D1FD569D9005194EF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				03AAE2861FD55A1E005194EF /* menu.png */,
+				03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		03AAE2921FD56B90005194EF /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03AAE2931FD56BA4005194EF /* SWRevealViewController.h */,
+				03AAE2941FD56BA4005194EF /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		48F898B37DAFF44829502FC6 /* Pods */ = {
@@ -271,6 +309,7 @@
 				TargetAttributes = {
 					0386026B1F86201200C05444 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					0386027F1F86201200C05444 = {
@@ -311,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */,
+				03AAE2871FD55A1E005194EF /* menu.png in Resources */,
 				03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */,
 				038602771F86201200C05444 /* Assets.xcassets in Resources */,
 				038602751F86201200C05444 /* Main.storyboard in Resources */,
@@ -495,12 +535,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				038602721F86201200C05444 /* ViewController.swift in Sources */,
+				03C34A9F1FD581CD0076B362 /* OmOsViewController.swift in Sources */,
 				034F46741FCC2EC300BD2644 /* EditTaskViewController.swift in Sources */,
 				0303006E1FD2BBEC00F2027C /* Tasks.swift in Sources */,
 				038602701F86201200C05444 /* AppDelegate.swift in Sources */,
 				030300741FD2D78700F2027C /* MainTableViewController.swift in Sources */,
+				03C34A9B1FD581520076B362 /* MinProfilViewController.swift in Sources */,
+				03AAE2951FD56BA4005194EF /* SWRevealViewController.m in Sources */,
 				034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */,
 				034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */,
+				03AAE29A1FD56E30005194EF /* SideMenuViewController.swift in Sources */,
+				03C34A9D1FD581750076B362 /* MineTasksViewController.swift in Sources */,
 				034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,11 +705,15 @@
 			baseConfigurationReference = AD2EB3F6B945E11B9AF03534 /* Pods-EasyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGL5XP5ACA;
 				INFOPLIST_FILE = EasyTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EasyTask.EasyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyTask/EasyTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -675,11 +724,14 @@
 			baseConfigurationReference = 0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGL5XP5ACA;
 				INFOPLIST_FILE = EasyTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EasyTask.EasyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyTask/EasyTask-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
