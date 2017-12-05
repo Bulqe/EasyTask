@@ -23,13 +23,12 @@ class EditTaskViewController: UIViewController {
         ref = Database.database().reference()
         if titleField.text != "" && descriptionField.text != "" && paymentField.text != "" {
             
-            let tasksId = self.ref?.child("tasks").childByAutoId().key
-            ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("tasks").child(tasksId!).setValue(true)
-            ref?.child("tasks").child(tasksId!).child("title").setValue(titleField.text)
-            ref?.child("tasks").child(tasksId!).child("description").setValue(descriptionField.text)
-            ref?.child("tasks").child(tasksId!).child("payment").setValue(paymentField.text)
+            let tasksId = idList[myIndex2]
+            ref?.child("tasks").child(tasksId).child("title").setValue(titleField.text)
+            ref?.child("tasks").child(tasksId).child("description").setValue(descriptionField.text)
+            ref?.child("tasks").child(tasksId).child("payment").setValue(paymentField.text)
             
-            self.performSegue(withIdentifier: "segueEditTask", sender: self)
+            self.performSegue(withIdentifier: "segueEditTaskDone", sender: self)
             
         } else {
             
@@ -46,14 +45,14 @@ class EditTaskViewController: UIViewController {
         
         ref = Database.database().reference()
 
-        //let tasksId = self.ref?.child("tasks").childByAutoId().key
-        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("title").observe(.value, with:{ snapshot in
+        let tasksId =  idList[myIndex2]
+        ref?.child("tasks").child(tasksId).child("title").observe(.value, with:{ snapshot in
             self.titleField.text = snapshot.value as? String
         })
-        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("description").observe(.value, with:{ snapshot in
+        ref?.child("tasks").child(tasksId).child("description").observe(.value, with:{ snapshot in
             self.descriptionField.text = snapshot.value as? String
         })
-        ref?.child("tasks").child("-Kzd6c1RqsNtsFNGx3TX").child("payment").observe(.value, with:{ snapshot in
+        ref?.child("tasks").child(tasksId).child("payment").observe(.value, with:{ snapshot in
             self.paymentField.text = snapshot.value as? String
         })
         

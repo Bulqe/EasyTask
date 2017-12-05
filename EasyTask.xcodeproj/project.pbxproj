@@ -13,6 +13,7 @@
 		034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */; };
 		034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A83C11FB45F1100567F43 /* MainViewController.swift */; };
 		034F46741FCC2EC300BD2644 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */; };
+		036DE4FB1FD712E400D88578 /* EditProfilDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE4FA1FD712E400D88578 /* EditProfilDoneViewController.swift */; };
 		038602701F86201200C05444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386026F1F86201200C05444 /* AppDelegate.swift */; };
 		038602721F86201200C05444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038602711F86201200C05444 /* ViewController.swift */; };
 		038602751F86201200C05444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038602731F86201200C05444 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		034A83BF1FB44D1900567F43 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		034A83C11FB45F1100567F43 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		034F46731FCC2EC300BD2644 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		036DE4FA1FD712E400D88578 /* EditProfilDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilDoneViewController.swift; sourceTree = "<group>"; };
 		0386026C1F86201200C05444 /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0386026F1F86201200C05444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038602711F86201200C05444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				03C34A9A1FD581520076B362 /* MinProfilViewController.swift */,
 				03C34A9C1FD581750076B362 /* MineTasksViewController.swift */,
 				03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */,
+				036DE4FA1FD712E400D88578 /* EditProfilDoneViewController.swift */,
 				038602731F86201200C05444 /* Main.storyboard */,
 				038602761F86201200C05444 /* Assets.xcassets */,
 				03AAE2961FD56BB4005194EF /* EasyTask-Bridging-Header.h */,
@@ -544,6 +547,7 @@
 				03AAE2951FD56BA4005194EF /* SWRevealViewController.m in Sources */,
 				034A83BE1FB44C8400567F43 /* CreateUserViewController.swift in Sources */,
 				034A83C01FB44D1900567F43 /* CreateTaskViewController.swift in Sources */,
+				036DE4FB1FD712E400D88578 /* EditProfilDoneViewController.swift in Sources */,
 				03AAE29A1FD56E30005194EF /* SideMenuViewController.swift in Sources */,
 				03C34A9D1FD581750076B362 /* MineTasksViewController.swift in Sources */,
 				034A83C21FB45F1100567F43 /* MainViewController.swift in Sources */,

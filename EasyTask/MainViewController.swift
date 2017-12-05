@@ -16,7 +16,6 @@ var tasksList = [Tasks]()
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var burgerMenu: UIBarButtonItem!
     
