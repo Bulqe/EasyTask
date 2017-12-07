@@ -19,14 +19,28 @@ class CreateTaskViewController: UIViewController {
     @IBOutlet weak var createTaskButton: UIButton!
     @IBAction func createTaskButtonClick(_ sender: UIButton) {
         
+        createTaskButton.isEnabled = false
+        
+        var titleText = titleField.text
+        titleText = titleText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var titleCheck = titleText?.replacingOccurrences(of: " ", with: "")
+        
+        var descriptionText = descriptionField.text
+        descriptionText = descriptionText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var descriptionCheck = descriptionText?.replacingOccurrences(of: " ", with: "")
+        
+        var paymentText = paymentField.text
+        paymentText = paymentText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var paymentCheck = paymentText?.replacingOccurrences(of: " ", with: "")
+        
         ref = Database.database().reference()
-        if titleField.text != "" && descriptionField.text != "" && paymentField.text != "" {
+        if titleText != "" && descriptionText != "" && paymentText != "" && titleCheck != "" && descriptionCheck != "" && paymentCheck != "" {
             
             let tasksId = self.ref?.child("tasks").childByAutoId().key
             ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("tasks").child(tasksId!).setValue(true)
-            ref?.child("tasks").child(tasksId!).child("title").setValue(titleField.text)
-            ref?.child("tasks").child(tasksId!).child("description").setValue(descriptionField.text)
-            ref?.child("tasks").child(tasksId!).child("payment").setValue(paymentField.text)
+            ref?.child("tasks").child(tasksId!).child("title").setValue(titleText)
+            ref?.child("tasks").child(tasksId!).child("description").setValue(descriptionText)
+            ref?.child("tasks").child(tasksId!).child("payment").setValue(paymentText)
             ref?.child("tasks").child(tasksId!).child("creatorID").setValue((Auth.auth().currentUser?.uid)!)
             
             self.performSegue(withIdentifier: "segueCreateTask", sender: self)
@@ -36,7 +50,7 @@ class CreateTaskViewController: UIViewController {
             let alertController = UIAlertController(title: "Ups!", message: "Husk at udfylde alle felter", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            
+            createTaskButton.isEnabled = true
         }
         
     }

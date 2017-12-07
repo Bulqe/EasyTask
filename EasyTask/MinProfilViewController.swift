@@ -16,6 +16,7 @@ class MinProfilViewController: ViewController {
     @IBOutlet weak var adresseLabel: UILabel!
     @IBOutlet weak var postNummerLabel: UILabel!
     @IBOutlet weak var byLabel: UILabel!
+    @IBOutlet weak var mobilNummerLabel: UILabel!
     
         var ref:DatabaseReference?
     
@@ -41,6 +42,9 @@ class MinProfilViewController: ViewController {
         })
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").observe(.value, with:{ snapshot in
             self.byLabel.text = snapshot.value as? String
+        })
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("phonenumber").observe(.value, with:{ snapshot in
+            self.mobilNummerLabel.text = snapshot.value as? String
         })
         
         // Do any additional setup after loading the view.

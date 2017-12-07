@@ -20,13 +20,25 @@ class EditTaskViewController: UIViewController {
     
     @IBAction func editTaskButtonClick(_ sender: UIButton) {
         
+        var titleText = titleField.text
+        titleText = titleText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var titleCheck = titleText?.replacingOccurrences(of: " ", with: "")
+        
+        var descriptionText = descriptionField.text
+        descriptionText = descriptionText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var descriptionCheck = descriptionText?.replacingOccurrences(of: " ", with: "")
+        
+        var paymentText = paymentField.text
+        paymentText = paymentText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var paymentCheck = paymentText?.replacingOccurrences(of: " ", with: "")
+        
         ref = Database.database().reference()
-        if titleField.text != "" && descriptionField.text != "" && paymentField.text != "" {
+        if titleText != "" && descriptionText != "" && paymentText != "" && titleCheck != "" && descriptionCheck != "" && paymentCheck != "" {
             
             let tasksId = idList[myIndex2]
-            ref?.child("tasks").child(tasksId).child("title").setValue(titleField.text)
-            ref?.child("tasks").child(tasksId).child("description").setValue(descriptionField.text)
-            ref?.child("tasks").child(tasksId).child("payment").setValue(paymentField.text)
+            ref?.child("tasks").child(tasksId).child("title").setValue(titleText)
+            ref?.child("tasks").child(tasksId).child("description").setValue(descriptionText)
+            ref?.child("tasks").child(tasksId).child("payment").setValue(paymentText)
             
             self.performSegue(withIdentifier: "segueEditTaskDone", sender: self)
             

@@ -601,6 +601,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobil Nummer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dju-Ic-wN4">
+                                <rect key="frame" x="124" y="459" width="128" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -609,7 +615,9 @@
                             <constraint firstItem="Yij-qI-C2k" firstAttribute="centerX" secondItem="XsJ-TJ-uQs" secondAttribute="centerX" id="AkA-Rq-Mqz"/>
                             <constraint firstItem="lch-Bi-k6u" firstAttribute="centerX" secondItem="XsJ-TJ-uQs" secondAttribute="centerX" id="DqG-W7-Ojn"/>
                             <constraint firstItem="bUY-N9-MfP" firstAttribute="top" secondItem="XsJ-TJ-uQs" secondAttribute="top" constant="70" id="NfK-vu-qNC"/>
+                            <constraint firstItem="Dju-Ic-wN4" firstAttribute="top" secondItem="UK8-KN-Rah" secondAttribute="bottom" constant="15" id="Oc9-sx-Rdf"/>
                             <constraint firstItem="Yij-qI-C2k" firstAttribute="top" secondItem="BLf-7r-qaD" secondAttribute="bottom" constant="15" id="R8t-DS-LjU"/>
+                            <constraint firstItem="Dju-Ic-wN4" firstAttribute="centerX" secondItem="XsJ-TJ-uQs" secondAttribute="centerX" id="aEY-Mb-6EQ"/>
                             <constraint firstItem="BLf-7r-qaD" firstAttribute="centerX" secondItem="XsJ-TJ-uQs" secondAttribute="centerX" id="cMS-53-WQN"/>
                             <constraint firstItem="UK8-KN-Rah" firstAttribute="top" secondItem="Yij-qI-C2k" secondAttribute="bottom" constant="15" id="i1a-FU-wv2"/>
                             <constraint firstItem="lch-Bi-k6u" firstAttribute="top" secondItem="bUY-N9-MfP" secondAttribute="bottom" constant="30" id="oCn-2U-DmL"/>
@@ -629,6 +637,7 @@
                         <outlet property="adresseLabel" destination="BLf-7r-qaD" id="mQu-fX-N4r"/>
                         <outlet property="burgerMenu" destination="jeV-Yj-n6k" id="fMZ-Mw-3je"/>
                         <outlet property="byLabel" destination="UK8-KN-Rah" id="GlX-Qd-8yk"/>
+                        <outlet property="mobilNummerLabel" destination="Dju-Ic-wN4" id="WwZ-EC-sqe"/>
                         <outlet property="navnLabel" destination="bUY-N9-MfP" id="Ing-x8-mh5"/>
                         <outlet property="postNummerLabel" destination="Yij-qI-C2k" id="3Uo-KC-mQC"/>
                     </connections>
@@ -693,7 +702,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-Yl-qH8">
-                                <rect key="frame" x="170.5" y="535" width="33" height="30"/>
+                                <rect key="frame" x="170.5" y="590" width="33" height="30"/>
                                 <state key="normal" title="Gem"/>
                                 <connections>
                                     <action selector="gemButtonClick:" destination="suD-I0-06d" eventType="touchUpInside" id="tGy-jo-LhP"/>
@@ -704,6 +713,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="SKIFT PROFIL BILLEDE"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobil Nummer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlE-YL-9NV">
+                                <rect key="frame" x="87.5" y="530" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="N9e-Cf-rQd"/>
+                                    <constraint firstAttribute="height" constant="35" id="cdg-Gs-r73"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -714,11 +733,13 @@
                             <constraint firstItem="aMB-IR-RSX" firstAttribute="centerX" secondItem="ShW-S4-DJ8" secondAttribute="centerX" id="EhX-TR-URq"/>
                             <constraint firstItem="y6G-KU-4lW" firstAttribute="centerX" secondItem="ShW-S4-DJ8" secondAttribute="centerX" id="Md7-tN-5kR"/>
                             <constraint firstItem="F5U-SX-BZb" firstAttribute="top" secondItem="ShW-S4-DJ8" secondAttribute="top" constant="33" id="OpO-83-oqy"/>
+                            <constraint firstItem="MSA-Yl-qH8" firstAttribute="top" secondItem="TlE-YL-9NV" secondAttribute="bottom" constant="25" id="QSW-D1-4hd"/>
+                            <constraint firstItem="TlE-YL-9NV" firstAttribute="top" secondItem="FOK-Sq-Jz1" secondAttribute="bottom" constant="20" id="Rfo-nR-zSP"/>
                             <constraint firstItem="MSA-Yl-qH8" firstAttribute="centerX" secondItem="ShW-S4-DJ8" secondAttribute="centerX" id="UGP-Ab-JBc"/>
                             <constraint firstItem="y6G-KU-4lW" firstAttribute="top" secondItem="2P3-Va-d7j" secondAttribute="bottom" constant="20" id="XP1-Zw-4SO"/>
                             <constraint firstItem="2P3-Va-d7j" firstAttribute="top" secondItem="TZK-Bw-MW9" secondAttribute="bottom" constant="20" id="db5-jO-nWb"/>
-                            <constraint firstItem="MSA-Yl-qH8" firstAttribute="top" secondItem="FOK-Sq-Jz1" secondAttribute="bottom" constant="25" id="eNH-oa-i4T"/>
                             <constraint firstItem="FOK-Sq-Jz1" firstAttribute="top" secondItem="y6G-KU-4lW" secondAttribute="bottom" constant="20" id="fT4-As-K5L"/>
+                            <constraint firstItem="TlE-YL-9NV" firstAttribute="centerX" secondItem="ShW-S4-DJ8" secondAttribute="centerX" id="n47-hD-qfk"/>
                             <constraint firstItem="aMB-IR-RSX" firstAttribute="top" secondItem="F5U-SX-BZb" secondAttribute="bottom" constant="42" id="qiQ-1c-foe"/>
                             <constraint firstItem="TZK-Bw-MW9" firstAttribute="centerX" secondItem="ShW-S4-DJ8" secondAttribute="centerX" id="yE9-Tc-6M0"/>
                         </constraints>
@@ -728,6 +749,7 @@
                         <outlet property="adresseField" destination="2P3-Va-d7j" id="WwI-PZ-x59"/>
                         <outlet property="byField" destination="FOK-Sq-Jz1" id="gyQ-FD-I3V"/>
                         <outlet property="gemButton" destination="MSA-Yl-qH8" id="CoK-gw-12W"/>
+                        <outlet property="mobilNummerField" destination="TlE-YL-9NV" id="tlo-7G-sSf"/>
                         <outlet property="navnField" destination="F5U-SX-BZb" id="52f-QH-fnp"/>
                         <outlet property="postNummerField" destination="y6G-KU-4lW" id="ff1-W5-cWK"/>
                         <segue destination="3yB-K1-VSD" kind="show" identifier="segueMinProfil" id="zzY-f6-zdr"/>
@@ -884,7 +906,7 @@
                                     <constraint firstAttribute="width" constant="343" id="B2t-se-RD8"/>
                                     <constraint firstAttribute="height" constant="30" id="aWE-tn-Oei"/>
                                 </constraints>
-                                <state key="normal" title="EDIT TASK"/>
+                                <state key="normal" title="Gem"/>
                                 <connections>
                                     <action selector="createTaskButtonClick:" destination="axH-Tb-Sk9" eventType="touchUpInside" id="2Yh-he-69s"/>
                                     <action selector="editTaskButtonClick:" destination="2Eu-s2-fbu" eventType="touchUpInside" id="hIe-dZ-C0P"/>
@@ -1131,7 +1153,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zzY-f6-zdr"/>
-        <segue reference="j82-ll-yhJ"/>
+        <segue reference="vfz-05-XJD"/>
         <segue reference="NZv-K7-y5E"/>
         <segue reference="hKw-9I-OJU"/>
         <segue reference="JyD-rn-MOP"/>

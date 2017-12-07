@@ -27,18 +27,49 @@ class CreateUserViewController: UIViewController {
         
         var ref:DatabaseReference?
         
+        var emailText = emailField.text
+        emailText = emailText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var emailCheck = emailText?.replacingOccurrences(of: " ", with: "")
         
-        if emailField.text != "" && passwordField.text != "" && passwordField.text == ConfirmPasswordField.text && navnField.text != "" && adresseField.text != "" && byField.text != "" && postNrField.text != "" && mobilNummerField.text != "" && DoingTasksSwitch.isOn != CreatingTasksSwitch.isOn
+        var passwordText = passwordField.text
+        passwordText = passwordText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var passwordCheck = passwordText?.replacingOccurrences(of: " ", with: "")
+        
+        var confirmPasswordText = ConfirmPasswordField.text
+        confirmPasswordText = confirmPasswordText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var confirmCheck = confirmPasswordText?.replacingOccurrences(of: " ", with: "")
+        
+        var navnText = navnField.text
+        navnText = navnText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var navnCheck = navnText?.replacingOccurrences(of: " ", with: "")
+        
+        var adresseText = adresseField.text
+        adresseText = adresseText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var adresseCheck = adresseText?.replacingOccurrences(of: " ", with: "")
+        
+        var byText = byField.text
+        byText = byText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var byCheck = byText?.replacingOccurrences(of: " ", with: "")
+        
+        var postNrText = postNrField.text
+        postNrText = postNrText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var postCheck = postNrText?.replacingOccurrences(of: " ", with: "")
+        
+        var mobilNummerText = mobilNummerField.text
+        mobilNummerText = mobilNummerText?.trimmingCharacters(in: .whitespacesAndNewlines)
+        var mobilCheck = mobilNummerText?.replacingOccurrences(of: " ", with: "")
+        
+        if emailText != "" && passwordText != "" && passwordText == confirmPasswordText && navnText != "" && adresseText != "" && byText != "" && postNrText != "" && mobilNummerText != "" && emailCheck != "" && passwordCheck != "" && passwordCheck == confirmCheck && navnCheck != "" && adresseCheck != "" && byCheck != "" && postCheck != "" && mobilCheck != "" && DoingTasksSwitch.isOn != CreatingTasksSwitch.isOn
         {
             
-            Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user, error) in
+            Auth.auth().createUser(withEmail: emailText!, password: passwordText!, completion: { (user, error) in
                 if user != nil{
                     ref = Database.database().reference()
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("email").setValue(Auth.auth().currentUser?.email)
-                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("name").setValue(self.navnField.text)
-                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").setValue(self.adresseField.text)
-                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").setValue(self.byField.text)
-                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").setValue(self.postNrField.text)
+                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("name").setValue(navnText)
+                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").setValue(adresseText)
+                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").setValue(byText)
+                    ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").setValue(postNrText)
                     
                     if (self.DoingTasksSwitch.isOn == true){
                         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("isTaskCreator").setValue(false)
