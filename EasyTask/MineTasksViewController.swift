@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-var myIndex2 = 1
+var myIndex2 = 0
 var tasksList2 = [Tasks]()
 var idList = [String]()
 
@@ -43,7 +43,6 @@ class MineTasksViewController: ViewController, UITableViewDataSource, UITableVie
     func loadTasks() {
         Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("tasks").observe(.childAdded) { (snapshot2: DataSnapshot) in
             let tasksId = snapshot2.key
-            idList.append(tasksId)
             
         Database.database().reference().child("tasks").observe(.childAdded) { (snapshot: DataSnapshot) in
             if (tasksId == snapshot.key){
@@ -52,8 +51,9 @@ class MineTasksViewController: ViewController, UITableViewDataSource, UITableVie
                     if let descriptionText = dict["description"]{
                         if let paymentText = dict["payment"]{
                             let task = Tasks(titleText: titleText as! String, descriptionText: descriptionText as! String, paymentText: paymentText as! String)
-                            tasksList2.append(task)
-                            self.tableView.reloadData()
+                                        idList.append(tasksId)
+                                        tasksList2.append(task)
+                                        self.tableView.reloadData()
                         }
                     }
                 }
