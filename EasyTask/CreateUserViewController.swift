@@ -39,6 +39,7 @@ class CreateUserViewController: UIViewController {
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").setValue(self.adresseField.text)
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").setValue(self.byField.text)
                     ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").setValue(self.postNrField.text)
+                    
                     if (self.DoingTasksSwitch.isOn == true){
                         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("isTaskCreator").setValue(false)
                     }

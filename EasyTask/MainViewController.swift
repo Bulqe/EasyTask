@@ -14,16 +14,27 @@ var tasksList = [Tasks]()
 
 
 
+
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var burgerMenu: UIBarButtonItem!
+    @IBOutlet weak var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self as? UITableViewDataSource
         loadTasks()
         tasksList.removeAll()
+        
+        ref = Database.database().reference()
+        
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("isTaskCreator").observe(.value, with:{ snapshot in
+            userStatus = (snapshot.value != nil)
+        })
+        if (userStatus == false){
+            navigationItem.rightBarButtonItem = nil
+        }
         
         if self.revealViewController() != nil {
             burgerMenu.target = self.revealViewController()
@@ -36,12 +47,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func loadTasks() {
         Database.database().reference().child("tasks").observe(.childAdded) { (snapshot: DataSnapshot) in
             if let dict = snapshot.value as? [String: Any] {
-                let titleText = dict["title"] as! String
-                let descriptionText = dict["description"] as! String
-                let paymentText = dict["payment"] as! String
-                let task = Tasks(titleText: titleText, descriptionText: descriptionText, paymentText: paymentText)
-                tasksList.append(task)
-                self.tableView.reloadData()
+                
+                if let titleText = dict["title"]{
+                    if let descriptionText = dict["description"]{
+                        if let paymentText = dict["payment"]{
+                            let task = Tasks(titleText: titleText as! String, descriptionText: descriptionText as! String, paymentText: paymentText as! String)
+                    tasksList.append(task)
+                    self.tableView.reloadData()
+                        }
+                    }
+                }
+                
+
             }
             
         }

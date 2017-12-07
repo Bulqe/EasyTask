@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-var myIndex2 = 0
+var myIndex2 = 1
 var tasksList2 = [Tasks]()
 var idList = [String]()
 
@@ -17,6 +17,7 @@ class MineTasksViewController: ViewController, UITableViewDataSource, UITableVie
 
     @IBOutlet weak var burgerMenu: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +43,20 @@ class MineTasksViewController: ViewController, UITableViewDataSource, UITableVie
     func loadTasks() {
         Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("tasks").observe(.childAdded) { (snapshot2: DataSnapshot) in
             let tasksId = snapshot2.key
-            idList[myIndex2] = tasksId
+            idList.append(tasksId)
             
         Database.database().reference().child("tasks").observe(.childAdded) { (snapshot: DataSnapshot) in
             if (tasksId == snapshot.key){
             if let dict = snapshot.value as? [String: Any] {
-                let titleText = dict["title"] as! String
-                let descriptionText = dict["description"] as! String
-                let paymentText = dict["payment"] as! String
-                let task = Tasks(titleText: titleText, descriptionText: descriptionText, paymentText: paymentText)
-                tasksList2.append(task)
-                self.tableView.reloadData()
+                if let titleText = dict["title"]{
+                    if let descriptionText = dict["description"]{
+                        if let paymentText = dict["payment"]{
+                            let task = Tasks(titleText: titleText as! String, descriptionText: descriptionText as! String, paymentText: paymentText as! String)
+                            tasksList2.append(task)
+                            self.tableView.reloadData()
+                        }
+                    }
+                }
             }
             }
             

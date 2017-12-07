@@ -36,7 +36,7 @@ class MinProfilViewController: ViewController {
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").observe(.value, with:{ snapshot in
             self.adresseLabel.text = snapshot.value as? String
         })
-        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").observe(.value, with:{ snapshot in
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode").observe(.value, with:{ snapshot in
             self.postNummerLabel.text = snapshot.value as? String
         })
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").observe(.value, with:{ snapshot in

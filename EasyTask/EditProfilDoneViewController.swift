@@ -28,9 +28,9 @@ class EditProfilDoneViewController: ViewController {
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("name").setValue(self.navnField.text)
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").setValue(self.adresseField.text)
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").setValue(self.byField.text)
-        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").setValue(self.postNummerField.text)
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode").setValue(self.postNummerField.text)
      
-            self.performSegue(withIdentifier: "segueEditTask", sender: self)
+            self.performSegue(withIdentifier: "segueMinProfil", sender: self)
             
         } else {
             
@@ -55,7 +55,7 @@ class EditProfilDoneViewController: ViewController {
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("address").observe(.value, with:{ snapshot in
             self.adresseField.text = snapshot.value as? String
         })
-        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode ").observe(.value, with:{ snapshot in
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("zipCode").observe(.value, with:{ snapshot in
             self.postNummerField.text = snapshot.value as? String
         })
         ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("city").observe(.value, with:{ snapshot in

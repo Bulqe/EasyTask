@@ -27,6 +27,7 @@ class CreateTaskViewController: UIViewController {
             ref?.child("tasks").child(tasksId!).child("title").setValue(titleField.text)
             ref?.child("tasks").child(tasksId!).child("description").setValue(descriptionField.text)
             ref?.child("tasks").child(tasksId!).child("payment").setValue(paymentField.text)
+            ref?.child("tasks").child(tasksId!).child("creatorID").setValue((Auth.auth().currentUser?.uid)!)
             
             self.performSegue(withIdentifier: "segueCreateTask", sender: self)
             

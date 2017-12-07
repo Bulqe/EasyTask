@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hot@hot.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-V3-asC">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DTU@test.dk" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-V3-asC">
                                 <rect key="frame" x="87" y="334" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="3KJ-yE-S4V"/>
@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="hothot" borderStyle="roundedRect" placeholder="Kode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-qm-SOp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Kode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-qm-SOp">
                                 <rect key="frame" x="87.5" y="406" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="VJ4-ii-Cv0"/>
@@ -472,6 +472,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="mnq-Bc-SWo" id="3B0-0J-5R6"/>
                         <outlet property="burgerMenu" destination="BP6-nT-6dU" id="a4e-xN-3It"/>
                         <outlet property="tableView" destination="A2o-58-BsV" id="tzX-mm-cyt"/>
                         <segue destination="5ga-vj-icg" kind="show" identifier="segueTableView" id="0NJ-pY-VXa"/>
@@ -729,7 +730,7 @@
                         <outlet property="gemButton" destination="MSA-Yl-qH8" id="CoK-gw-12W"/>
                         <outlet property="navnField" destination="F5U-SX-BZb" id="52f-QH-fnp"/>
                         <outlet property="postNummerField" destination="y6G-KU-4lW" id="ff1-W5-cWK"/>
-                        <segue destination="3yB-K1-VSD" kind="show" identifier="segueEditTask" id="zzY-f6-zdr"/>
+                        <segue destination="3yB-K1-VSD" kind="show" identifier="segueMinProfil" id="zzY-f6-zdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dyv-Cz-bv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -796,9 +797,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="PQM-oZ-ra6" id="icp-FM-C6i"/>
                         <outlet property="burgerMenu" destination="45f-ZF-ZGC" id="ojF-cJ-AQ7"/>
                         <outlet property="tableView" destination="u7I-g4-jv2" id="bsi-hF-wIM"/>
-                        <segue destination="2Eu-s2-fbu" kind="show" id="Sgv-Jw-RqT"/>
+                        <segue destination="2Eu-s2-fbu" kind="show" identifier="segueEditTask" id="Sgv-Jw-RqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIA-AC-Yvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1037,6 +1039,8 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="mineOpgaverCell" destination="dlf-dY-VxG" id="xo3-m7-nnt"/>
+                        <outlet property="tableView" destination="Pkn-UD-rnP" id="65w-nD-y4I"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueLogOut" id="JyD-rn-MOP"/>
                     </connections>
                 </tableViewController>
@@ -1125,10 +1129,10 @@
         <image name="menu.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XMC-3Q-Mfj"/>
+        <segue reference="zzY-f6-zdr"/>
         <segue reference="j82-ll-yhJ"/>
         <segue reference="NZv-K7-y5E"/>
         <segue reference="314-tD-SDA"/>
-        <segue reference="17b-QF-wo9"/>
+        <segue reference="JyD-rn-MOP"/>
     </inferredMetricsTieBreakers>
 </document>

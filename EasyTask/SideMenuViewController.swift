@@ -9,11 +9,26 @@
 import UIKit
 import Firebase
 
-class SideMenuViewController: UITableViewController {
+var ref:DatabaseReference?
+var userStatus = false
 
+class SideMenuViewController: UITableViewController {
+    
+    @IBOutlet weak var mineOpgaverCell: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = Database.database().reference()
+        
+        ref?.child("users").child((Auth.auth().currentUser?.uid)!).child("isTaskCreator").observe(.value, with:{ snapshot in
+            userStatus = (snapshot.value != nil)
+        })
+        
+        if (userStatus == false){
+        }
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
