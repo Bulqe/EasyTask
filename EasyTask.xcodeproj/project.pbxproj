@@ -27,6 +27,11 @@
 		03C34A9B1FD581520076B362 /* MinProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9A1FD581520076B362 /* MinProfilViewController.swift */; };
 		03C34A9D1FD581750076B362 /* MineTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9C1FD581750076B362 /* MineTasksViewController.swift */; };
 		03C34A9F1FD581CD0076B362 /* OmOsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */; };
+		03C6960F1FD980BF0041681C /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C6960E1FD980BF0041681C /* Icon-App-60x60@2x.png */; };
+		03C696111FD980F80041681C /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C696101FD980F80041681C /* Icon-App-60x60@3x.png */; };
+		03C696131FD981130041681C /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C696121FD981130041681C /* Icon-App-29x29@2x.png */; };
+		03C696151FD9811B0041681C /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C696141FD9811B0041681C /* Icon-App-29x29@3x.png */; };
+		03C696191FD982D50041681C /* Users-User-Male-2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C696181FD982D40041681C /* Users-User-Male-2-icon.png */; };
 		03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */; };
 		8CCA5B9D1A20AFDB19D192F6 /* Pods_EasyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */; };
 		9BDA193A7AD81652D02F038D /* Pods_EasyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CEA751C9E41B5CE228701 /* Pods_EasyTask.framework */; };
@@ -79,6 +84,11 @@
 		03C34A9A1FD581520076B362 /* MinProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinProfilViewController.swift; sourceTree = "<group>"; };
 		03C34A9C1FD581750076B362 /* MineTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTasksViewController.swift; sourceTree = "<group>"; };
 		03C34A9E1FD581CD0076B362 /* OmOsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOsViewController.swift; sourceTree = "<group>"; };
+		03C6960E1FD980BF0041681C /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		03C696101FD980F80041681C /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		03C696121FD981130041681C /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		03C696141FD9811B0041681C /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		03C696181FD982D40041681C /* Users-User-Male-2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Users-User-Male-2-icon.png"; sourceTree = "<group>"; };
 		03F2562E1FAB101D004A8F6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B76A873F85698B776E090E7 /* Pods-EasyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTask/Pods-EasyTask.release.xcconfig"; sourceTree = "<group>"; };
 		2C8EBED55B61596086AC8DA8 /* Pods_EasyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +207,11 @@
 		03AAE28D1FD569D9005194EF /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				03C6960E1FD980BF0041681C /* Icon-App-60x60@2x.png */,
+				03C696101FD980F80041681C /* Icon-App-60x60@3x.png */,
+				03C696121FD981130041681C /* Icon-App-29x29@2x.png */,
+				03C696141FD9811B0041681C /* Icon-App-29x29@3x.png */,
+				03C696181FD982D40041681C /* Users-User-Male-2-icon.png */,
 				03AAE2861FD55A1E005194EF /* menu.png */,
 				03ADD72C1FAB1AEE0013F771 /* EasyTaskLogo.png */,
 			);
@@ -352,11 +367,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C6960F1FD980BF0041681C /* Icon-App-60x60@2x.png in Resources */,
 				03ADD72D1FAB1AEE0013F771 /* EasyTaskLogo.png in Resources */,
 				03AAE2871FD55A1E005194EF /* menu.png in Resources */,
 				03F2562F1FAB101D004A8F6D /* GoogleService-Info.plist in Resources */,
+				03C696131FD981130041681C /* Icon-App-29x29@2x.png in Resources */,
+				03C696111FD980F80041681C /* Icon-App-60x60@3x.png in Resources */,
 				038602771F86201200C05444 /* Assets.xcassets in Resources */,
+				03C696191FD982D50041681C /* Users-User-Male-2-icon.png in Resources */,
 				038602751F86201200C05444 /* Main.storyboard in Resources */,
+				03C696151FD9811B0041681C /* Icon-App-29x29@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
